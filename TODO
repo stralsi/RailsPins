@@ -1,0 +1,12 @@
+[x] new form
+[x] when saved successfully redirect_to show @pin, flash message. Else, go back
+[x] add flash to application.html.erb
+[x] create show action, view
+[x] find_pin before action
+[x] list out pins on index
+[x] order pins in index by date of creation descending
+[x] edit, update.
+[x] when successfully updated, redirect to show @pin, flash message, else go back
+[x] edit page has link to cancel
+[x] destroy with confirmation
+[x] link to new pin in index
