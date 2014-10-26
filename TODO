@@ -1,3 +1,4 @@
+--- pin crud --
 [x] new form
 [x] when saved successfully redirect_to show @pin, flash message. Else, go back
 [x] add flash to application.html.erb
@@ -10,3 +11,46 @@
 [x] edit page has link to cancel
 [x] destroy with confirmation
 [x] link to new pin in index
+--- devise and user association --
+[ ] add devise gem
+[ ] install devise
+[ ] generate devise model 'User'
+[ ] association between user, pin
+[ ] generate migration
+[ ] in pin show -> submitted by ..
+[ ] in new, build pin from current user
+[ ] in create, build pin from current user
+--- styling --
+[ ] install bootstrap gem. follow instructions from docs
+[ ] add navbar to application.html.erb
+[ ] if user signed in, link for new pin, account, sign out
+[ ] if not signed in, sign-in, sign-up
+[ ] container for body
+[ ] on the Pin new & edit pages, add a wrapper to center the form. (col-md-6, col-md-offset-3)
+--- uploading images --
+[ ] paperclip gem
+[ ] follow paperclip docs, install
+[ ] add image upload to pin form
+[ ] add image to pin params
+[ ] add image to show view
+[ ] add image to index
+[ ] add image to edit view
+--- jquery masonry and styles ---
+[ ] gem masonry-rails
+[ ] put all pins on index in a pins div
+[ ] put each pin in a panel
+[ ] jquery: call masonry on pins div
+[ ] index styles ?
+[ ] show style - panel
+[ ] index - submitted by
+--- voting on pins ---
+[ ] gem acts_as_votable
+[ ] nested route for upvote
+[ ] add vote btn on show page
+-- tweaks ---
+[ ] authenticate when trying to like, create
+[ ] styling new/edit forms
+[ ] styling sign-up, sign-in forms
+-- extra --
+[ ] comments on each pin
+[ ] profile for each user, list all the pins each user has liked
