@@ -12,14 +12,14 @@
 [x] destroy with confirmation
 [x] link to new pin in index
 --- devise and user association --
-[ ] add devise gem
-[ ] install devise
-[ ] generate devise model 'User'
-[ ] association between user, pin
-[ ] generate migration
-[ ] in pin show -> submitted by ..
-[ ] in new, build pin from current user
-[ ] in create, build pin from current user
+[x] add devise gem
+[x] install devise
+[x] generate devise model 'User'
+[x] association between user, pin
+[x] generate migration
+[x] in pin show -> submitted by ..
+[-] in new, build pin from current user (did not do this)
+[x] in create, build pin from current user
 --- styling --
 [ ] install bootstrap gem. follow instructions from docs
 [ ] add navbar to application.html.erb

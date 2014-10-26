@@ -38,8 +38,12 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
 #Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass
 gem 'bootstrap-sass', '~> 3.2.0.2'
 
 #Forms made easy!
 gem 'simple_form', '~> 3.0.2'
+
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.4.0'
