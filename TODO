@@ -27,6 +27,7 @@
 [x] if not signed in, sign-in, sign-up
 [x] container for body
 [x] on the Pin new & edit pages, add a wrapper to center the form. (col-md-6, col-md-offset-3)
+[x] styling sign-up, sign-in forms
 --- uploading images --
 [ ] paperclip gem
 [ ] follow paperclip docs, install
@@ -50,7 +51,6 @@
 -- tweaks ---
 [ ] authenticate when trying to like, create
 [ ] styling new/edit forms
-[ ] styling sign-up, sign-in forms
 -- extra --
 [ ] comments on each pin
 [ ] profile for each user, list all the pins each user has liked
