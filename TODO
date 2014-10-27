@@ -21,12 +21,12 @@
 [-] in new, build pin from current user (did not do this)
 [x] in create, build pin from current user
 --- styling --
-[ ] install bootstrap gem. follow instructions from docs
-[ ] add navbar to application.html.erb
-[ ] if user signed in, link for new pin, account, sign out
-[ ] if not signed in, sign-in, sign-up
-[ ] container for body
-[ ] on the Pin new & edit pages, add a wrapper to center the form. (col-md-6, col-md-offset-3)
+[x] install bootstrap gem. follow instructions from docs
+[x] add navbar to application.html.erb
+[x] if user signed in, link for new pin, account, sign out
+[x] if not signed in, sign-in, sign-up
+[x] container for body
+[x] on the Pin new & edit pages, add a wrapper to center the form. (col-md-6, col-md-offset-3)
 --- uploading images --
 [ ] paperclip gem
 [ ] follow paperclip docs, install
