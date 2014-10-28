@@ -47,3 +47,6 @@ gem 'simple_form', '~> 3.0.2'
 
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.4.0'
+
+# Easy upload management for ActiveRecord
+gem 'paperclip', '~> 4.2.0'

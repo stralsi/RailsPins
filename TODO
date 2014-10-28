@@ -29,13 +29,13 @@
 [x] on the Pin new & edit pages, add a wrapper to center the form. (col-md-6, col-md-offset-3)
 [x] styling sign-up, sign-in forms
 --- uploading images --
-[ ] paperclip gem
-[ ] follow paperclip docs, install
-[ ] add image upload to pin form
-[ ] add image to pin params
-[ ] add image to show view
-[ ] add image to index
-[ ] add image to edit view
+[x] paperclip gem
+[x] follow paperclip docs, install
+[x] add image upload to pin form
+[x] add image to pin params
+[x] add image to show view
+[x] add image to index
+[x] add image to edit view
 --- jquery masonry and styles ---
 [ ] gem masonry-rails
 [ ] put all pins on index in a pins div

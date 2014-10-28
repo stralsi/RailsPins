@@ -1,3 +1,10 @@
 <% @pins.each do |pin| %>
-<h1><span class="glyphicon glyphicon-heart"></span><%= link_to pin.title, pin %></h1>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <%= image_tag pin.image %>
+    </div>
+    <div class="panel-footer">
+      <%= link_to pin.title, pin %>
+    </div>
+  </div>
 <% end %>
