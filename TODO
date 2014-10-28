@@ -37,10 +37,10 @@
 [x] add image to index
 [x] add image to edit view
 --- jquery masonry and styles ---
-[ ] gem masonry-rails
-[ ] put all pins on index in a pins div
-[ ] put each pin in a panel
-[ ] jquery: call masonry on pins div
+[x] gem masonry-rails
+[x] put all pins on index in a pins div
+[x] put each pin in a panel
+[x] jquery: call masonry on pins div
 [ ] index styles ?
 [ ] show style - panel
 [ ] index - submitted by

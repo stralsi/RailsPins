@@ -50,3 +50,6 @@ gem 'devise', '~> 3.4.0'
 
 # Easy upload management for ActiveRecord
 gem 'paperclip', '~> 4.2.0'
+
+#Masonry will rock your world!
+gem 'masonry-rails', '~> 0.2.1'

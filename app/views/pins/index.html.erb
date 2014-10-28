@@ -1,10 +1,12 @@
-<% @pins.each do |pin| %>
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <%= image_tag pin.image %>
+<div id="masonry-container">
+  <% @pins.each do |pin| %>
+    <div class="pin panel panel-default">
+      <div class="panel-body">
+        <%= image_tag pin.image %>
+      </div>
+      <div class="panel-footer">
+        <%= link_to pin.title, pin %>
+      </div>
     </div>
-    <div class="panel-footer">
-      <%= link_to pin.title, pin %>
-    </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
