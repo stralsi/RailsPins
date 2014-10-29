@@ -1,6 +1,6 @@
 class PinsController < ApplicationController
-  before_action :find_pin, only:[:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only:[:new, :create, :edit, :update, :destroy]
+  before_action :find_pin, only:[:show, :edit, :update, :destroy, :like]
+  before_action :authenticate_user!, only:[:new, :create, :edit, :update, :destroy, :like]
 
   def index
     @pins = Pin.all.order(:created_at).reverse_order
@@ -20,7 +20,7 @@ class PinsController < ApplicationController
     end
   end
 
-  def show
+    def show
   end
 
   def edit
@@ -40,6 +40,11 @@ class PinsController < ApplicationController
     else
       render 'show'
     end
+  end
+
+  def like
+    current_user.likes @pin
+    redirect_to @pin, notice: 'You liked this pin, awesome!'
   end
 
   private

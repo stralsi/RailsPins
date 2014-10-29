@@ -15,7 +15,16 @@
         </p>
       </div>
       <div class="panel-footer">
-        Submitted by <%= pin.user.email %>
+        <div class="row">
+        <div class="col-md-6">
+          Submitted by <%= pin.user.email %>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <%= render 'like_button', pin: pin %>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   <% end %>

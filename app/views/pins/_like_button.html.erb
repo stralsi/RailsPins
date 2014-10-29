@@ -1,0 +1,11 @@
+<% if not user_signed_in? or not current_user.voted_for? pin %>
+  <%= link_to like_pin_path( pin ), method: :put, class: "btn btn-default" do %>
+    <%= pin.get_likes.size %>
+    <span class="glyphicon glyphicon-heart-empty"></span>
+  <% end %>
+<% else %>
+  <button disabled="disabled" class="btn btn-default">
+    <%= pin.get_likes.size %>
+    <span class="glyphicon glyphicon-heart"></span>
+  </button>
+<% end %>

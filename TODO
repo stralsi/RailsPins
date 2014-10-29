@@ -45,9 +45,9 @@
 [x] show style - panel
 [x] index - submitted by
 --- voting on pins ---
-[ ] gem acts_as_votable
-[ ] nested route for upvote
-[ ] add vote btn on show page
+[x] gem acts_as_votable
+[x] nested route for upvote
+[x] add vote btn on show page
 -- tweaks ---
 [ ] authenticate when trying to like, create
 [ ] styling new/edit forms

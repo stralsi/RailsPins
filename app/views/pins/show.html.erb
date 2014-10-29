@@ -8,8 +8,21 @@
     <p>Submitted by <%= @pin.user.email %></p>
   </div>
   <div class="panel-footer">
-    <%= link_to 'Edit', edit_pin_path( @pin ) %>
-    <%= link_to 'Delete', @pin, method: 'delete', data:{ confirm: 'Are you sure?' }%>
-    <%= link_to 'Back', root_path %>
+    <div class="row">
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-6">
+        <div class="pull-right">
+
+          <div class="btn-group">
+            <%= link_to 'Edit', edit_pin_path( @pin ), class:"btn btn-default" %>
+            <%= link_to 'Delete', @pin, method: 'delete', class:"btn btn-default", data:{ confirm: 'Are you sure?' }%>
+          </div>
+
+          <%= render 'like_button', pin:@pin %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

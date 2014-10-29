@@ -53,3 +53,6 @@ gem 'paperclip', '~> 4.2.0'
 
 #Masonry will rock your world!
 gem 'masonry-rails', '~> 0.2.1'
+
+#Acts As Votable is a Ruby Gem specifically written for Rails/ActiveRecord models.
+gem 'acts_as_votable', '~> 0.10.0'
