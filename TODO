@@ -41,9 +41,9 @@
 [x] put all pins on index in a pins div
 [x] put each pin in a panel
 [x] jquery: call masonry on pins div
-[ ] index styles ?
-[ ] show style - panel
-[ ] index - submitted by
+[x] index styles ?
+[x] show style - panel
+[x] index - submitted by
 --- voting on pins ---
 [ ] gem acts_as_votable
 [ ] nested route for upvote
