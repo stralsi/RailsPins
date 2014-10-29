@@ -1,6 +1,7 @@
 class PinsController < ApplicationController
   before_action :find_pin, only:[:show, :edit, :update, :destroy, :like]
   before_action :authenticate_user!, only:[:new, :create, :edit, :update, :destroy, :like]
+  before_action :check_if_owner_of_pin!, only:[:edit, :update, :destroy]
 
   def index
     @pins = Pin.all.order(:created_at).reverse_order
@@ -20,7 +21,7 @@ class PinsController < ApplicationController
     end
   end
 
-    def show
+  def show
   end
 
   def edit
@@ -48,6 +49,12 @@ class PinsController < ApplicationController
   end
 
   private
+  def check_if_owner_of_pin!
+    if current_user.id != @pin.user.id
+      return redirect_to @pin, :flash => { :error => "You can't do this, you're not the one who created this pin!" }
+    end
+  end
+
   def find_pin
     @pin = Pin.find(params[:id])
   end
