@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1><%= @pin.title %></h1>
+  </div>
+  <div class="panel-body">
+    <%= image_tag @pin.image(:large) %>
+    <p><%= @pin.description %></p>
+    <p>Submitted by <%= @pin.user.email %></p>
+  </div>
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-6">
+        <div class="pull-right">
+          <% if user_signed_in? and @pin.user == current_user %>
+          <div class="btn-group">
+            <%= link_to 'Edit', edit_pin_path( @pin ), class:"btn btn-default" %>
+            <%= link_to 'Delete', @pin, method: 'delete', class:"btn btn-default", data:{ confirm: 'Are you sure?' }%>
+          </div>
+          <% end %>
+          <%= render 'like_button', pin:@pin %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

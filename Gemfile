@@ -38,3 +38,21 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+#Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass
+gem 'bootstrap-sass', '~> 3.2.0.2'
+
+#Forms made easy!
+gem 'simple_form', '~> 3.0.2'
+
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.4.0'
+
+# Easy upload management for ActiveRecord
+gem 'paperclip', '~> 4.2.0'
+
+#Masonry will rock your world!
+gem 'masonry-rails', '~> 0.2.1'
+
+#Acts As Votable is a Ruby Gem specifically written for Rails/ActiveRecord models.
+gem 'acts_as_votable', '~> 0.10.0'

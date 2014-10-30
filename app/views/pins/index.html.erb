@@ -1,0 +1,31 @@
+<div id="masonry-container">
+  <% @pins.each do |pin| %>
+    <div class="pin panel panel-default">
+      <div class="panel-body">
+        <%= image_tag pin.image(:medium ) %>
+      </div>
+      <div class="panel-footer">
+        <p>
+          <strong>
+            <%= link_to pin.title, pin %>
+          </strong>
+        </p>
+        <p>
+          <%= pin.description %>
+        </p>
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+        <div class="col-md-6">
+          Submitted by <%= pin.user.email %>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <%= render 'like_button', pin: pin %>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
