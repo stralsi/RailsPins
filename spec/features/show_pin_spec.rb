@@ -14,7 +14,7 @@ describe "showing a pin" do
 
   context "when the user is logged in as the pin author" do
     before do
-      show_pin_page.visit_page_as(pin, author)
+      show_pin_page.visit_page_as(author, pin)
     end
     it "shows the edit and delete buttons" do
       expect(show_pin_page).to have_edit_button
@@ -24,7 +24,7 @@ describe "showing a pin" do
 
   context "when the user is not logged in as the pin author" do
     before do
-      show_pin_page.visit_page_as(pin, not_author)
+      show_pin_page.visit_page_as(not_author, pin)
     end
 
     it "does not show the edit and delete buttons" do

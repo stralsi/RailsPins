@@ -15,7 +15,7 @@ class ShowPinPage
     visit pin_path pin
   end
 
-  def visit_page_as(pin, user)
+  def visit_page_as(user, pin)
     login_as(user)
     visit pin_path pin
   end
