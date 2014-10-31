@@ -9,8 +9,7 @@ describe "deleting a pin" do
   context "when logged in as the pin author" do
     before { show_pin_page.visit_page_as(author, pin) }
 
-    it "does not show on the index page any more", :js => true do
-      pending
+    it "does not show on the index page any more" #, :js => true do
       #
       # find( '#pin_delete' ).click
       # page.driver.browser.switch_to.alert.accept
@@ -18,6 +17,6 @@ describe "deleting a pin" do
       # index_page = IndexPage.new
       #
       # expect(index_page).to_not have_pin(pin)
-    end
+    #end
   end
 end
