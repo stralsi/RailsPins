@@ -7,13 +7,19 @@ class ShowPinPage
     @title = '.pin_title'
     @description = '.pin_description'
     @author = '.pin_author'
-    @edit = 'Edit'
-    @delete = 'Delete'
+    @edit = '#pin_edit'
+    @delete = '#pin_delete'
   end
 
   def visit_page(pin)
     visit pin_path pin
   end
+
+  def visit_page_as(pin, user)
+    login_as(user)
+    visit pin_path pin
+  end
+
 
   def title
     find( @title ).text
@@ -33,5 +39,13 @@ class ShowPinPage
     has_author = author.match("#{pin.user.email}")
 
     has_title and has_description and has_author
+  end
+
+  def has_edit_button?
+    has_css? @edit
+  end
+
+  def has_delete_button?
+    has_css? @delete
   end
 end
