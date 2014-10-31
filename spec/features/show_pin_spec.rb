@@ -8,7 +8,7 @@ describe "showing a pin" do
   it "has the correct pin details" do
     show_pin_page.visit_page(pin)
 
-    expect(show_pin_page).to have_pin(pin)
+    expect(show_pin_page).to have_pin_details(pin)
   end
 
   context "when the user is logged in as the pin owner" do

@@ -24,7 +24,7 @@ describe "adding a pin when logged in" do
   it "shows the pin on the show page" do
     show_pin_page = new_pin_page.create_pin(pin)
 
-    expect( show_pin_page.title ).to eq( pin.title )
+    expect( show_pin_page ).to have_pin_details( pin )
   end
 
   it "sets the current user as the author" do

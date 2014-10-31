@@ -27,7 +27,7 @@ class ShowPinPage
     find( @author ).text
   end
 
-  def has_pin?(pin)
+  def has_pin_details?(pin)
     has_title = title == pin.title
     has_description = description == pin.description
     has_author = author.match("#{pin.user.email}")
