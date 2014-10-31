@@ -12,13 +12,13 @@ describe "trying to add a pin when not logged in" do
 end
 
 describe "adding a pin when logged in" do
-  let(:user){FactoryGirl.create(:user)}
+  let(:author){FactoryGirl.create(:user)}
   let(:pin){FactoryGirl.build(:pin)}
   let(:new_pin_page) { NewPinPage.new }
   let(:index_page) { IndexPage.new }
 
   before do
-    new_pin_page.visit_page_as(user)
+    new_pin_page.visit_page_as( author )
   end
 
   it "shows the pin on the show page" do
@@ -30,7 +30,7 @@ describe "adding a pin when logged in" do
   it "sets the current user as the author" do
     show_pin_page = new_pin_page.create_pin(pin)
 
-    expect( show_pin_page.author ).to match("#{user.email}")
+    expect( show_pin_page.author ).to match("#{author.email}")
   end
 
   it "shows the pin on the index page" do
