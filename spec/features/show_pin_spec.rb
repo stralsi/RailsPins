@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "showing a pin" do
   let(:author){ FactoryGirl.create(:user) }
   let(:not_author){ FactoryGirl.create(:user) }
-  let(:pin){ FactoryGirl.create(:pin, user_id:author.id) }
+  let(:pin){ FactoryGirl.create(:pin, user:author) }
   let(:show_pin_page){ ShowPinPage.new }
 
   it "has the correct pin details" do

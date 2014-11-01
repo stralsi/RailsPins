@@ -13,7 +13,7 @@ end
 
 describe "adding a pin when logged in" do
   let(:author){FactoryGirl.create(:user)}
-  let(:pin){FactoryGirl.build(:pin)}
+  let(:pin){FactoryGirl.build(:pin, user:author)}
   let(:new_pin_page) { NewPinPage.new }
   let(:index_page) { IndexPage.new }
 
