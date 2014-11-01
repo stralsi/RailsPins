@@ -42,6 +42,10 @@ class ShowPinPage
     find( @author ).text
   end
 
+  def number_of_likes
+    find( @number_of_likes ).text.to_i
+  end
+
   def has_pin_details?(pin)
     has_title = title == pin.title
     has_description = description == pin.description
@@ -56,5 +60,10 @@ class ShowPinPage
 
   def has_delete_button?
     has_css? @delete
+  end
+
+  def has_like_disabled?
+    disabled_attr = find( @like )[:disabled]
+    disabled_attr == "disabled"
   end
 end
