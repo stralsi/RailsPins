@@ -9,17 +9,26 @@ class ShowPinPage
     @author = '.pin_author'
     @edit = '#pin_edit'
     @delete = '#pin_delete'
+    @like = '.btn-like'
+    @number_of_likes = '.number-of-likes'
   end
 
   def visit_page(pin)
     visit pin_path pin
+    self
   end
 
   def visit_page_as(user, pin)
     login_as(user)
     visit pin_path pin
+    self
   end
 
+  def like
+    #click_link_or_button @like
+    find(@like).click
+    self
+  end
 
   def title
     find( @title ).text
