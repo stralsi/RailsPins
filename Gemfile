@@ -56,3 +56,29 @@ gem 'masonry-rails', '~> 0.2.1'
 
 #Acts As Votable is a Ruby Gem specifically written for Rails/ActiveRecord models.
 gem 'acts_as_votable', '~> 0.10.0'
+
+group :development, :test do
+  gem 'guard', '~> 2.7.0'
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'factory_girl_rails', '~> 4.5.0' #use factories for test, not fixtures
+end
+
+group :test do
+  gem 'capybara', '~> 2.4.4' #intuitive testing language
+  gem 'selenium-webdriver', '~> 2.43.0' #allows js in tests
+  gem 'spork', '~> 0.9.2' #quicker tests
+  gem 'guard-spork', '~> 1.5.1' #automatic tests on file save
+  gem 'guard-rspec', '~> 4.3.1' #ditto
+  gem 'database_cleaner', '~> 1.3.0' #clean the database in tests easily
+  gem 'launchy', '~> 2.4.2' #for opening up the page while debugging tests
+
+# Uncomment this line on OS X.
+# gem 'growl', '1.0.3'
+
+# Uncomment these lines on Linux.
+# gem 'libnotify', '0.8.0'
+
+# Uncomment these lines on Windows.
+# gem 'rb-notifu', '0.0.4'
+# gem 'wdm', '0.1.0'
+end
